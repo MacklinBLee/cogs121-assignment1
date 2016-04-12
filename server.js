@@ -133,11 +133,32 @@ passport.deserializeUser(function(user, done) {
   res.redirect("/");
 });
  
-// io.use(function(socket, next) {
-//     session_middleware(socket.request, {}, next);
-// });
+ io.use(function(socket, next) {
+     session_middleware(socket.request, {}, next);
+ });
 
-/* TODO: Server-side Socket.io here */
+/* Server-side Socket.io here */
+
+io.on('connection', function(socket) {
+    socket.on("data", function(comment) {
+        var message = new models.Message({
+            "user": socket.request.session.passport.user.username,
+            "photos" : socket.request.session.passport.user.photos,
+			"comment": comment,
+            "posted": Date.now()
+        });
+        //console.log(socket.request.session.passport.user);
+
+        message.save(function(err, message) {
+            if (err)
+                throw err;
+        });
+
+        io.emit("data", message);
+
+    });
+
+});
 
 // Start Server
 http.listen(app.get("port"), function() {

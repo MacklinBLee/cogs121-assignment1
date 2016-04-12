@@ -4,11 +4,13 @@ exports.send = function(req, res) {
   console.log(req.body); // help you see what is inside of req.body
   var message = new models.Message(
     {
-    "fullname": req.body.fullname,
-    "food": req.body.food,
+    "username": socket.request.session.passport.user.username,
+    "comment": req.body.food,
     "rating": req.body.rating
+	
     }
-  );
+   );
+
 
   message.save(saving)
   

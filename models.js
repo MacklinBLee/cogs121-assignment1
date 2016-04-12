@@ -5,15 +5,17 @@ var UserSchema = new mongoose.Schema({
     "token": String,
     "username": String,
     "displayName": String,
-    "photo": String
+    "photo": [ {"value": String } ],
 });
 
 exports.User = mongoose.model("User", UserSchema);
 
 var MessageSchema = new mongoose.Schema({
-  "fullname": String,
-  "food": String,
-  "rating": String
+  "username": String,
+  "photo": [ {"value": String } ],
+  "comment": String,
+  "rating": String,
+  "posted": Date
 });
 
 exports.Message = mongoose.model("Message", MessageSchema);
