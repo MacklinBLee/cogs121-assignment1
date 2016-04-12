@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <form action="/message" method="post">
+    	Name: <input type="text" name="fullname"><br>
+    	Food: <textarea name="food"></textarea><br>
+		Rating: <input type="radio" name="rating" value="one" checked> 1 |
+		<input type="radio" name="rating" value="two" > 2 |
+		<input type="radio" name="rating" value="three" > 3 |
+		<input type="radio" name="rating" value="four" > 4 |
+		<input type="radio" name="rating" value="five" > 5 <br>
+    	<input type="submit" value="Submit">
+    </form>
+    {{#if data}}
+    <h3>My Messages</h3>
+    <table>
+    	<thead>
+    		<th>Name</th>
+    		<th>Food</th>
+    		<th>Rating</th>
+    	</thead>
+    	<tbody>
+    		{{#each data}}
+    		<tr>
+    			<td>{{fullname}}</td>
+    			<td>{{food}}</td>
+    			<td>{{rating}}</td>
+    		</tr>
+    		{{/each}}
+    	</tbody>
+    </table>
+    {{/if}}
+</body>
+
+</html>
