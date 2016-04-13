@@ -1,10 +1,11 @@
 <head>
-   <link rel="stylesheet" type="text/css" href="../css/style.min.css">
+   <link rel="stylesheet" type="text/css" href="../css/smartr.css">
 </head>
 
-<header>
+<header>	
+	<a class="title"> smARTr </a>
     <a class="logout" href="/logout">
-        <div align=right class="logout-button">
+		<div  class="logout-button">
             Logout
         </div>
     </a>
@@ -39,13 +40,13 @@
 			<li>
                 <div class="user">
                     <div class="user-image">
-                        <img src="{{user.photo}}" alt="">
+                        <img src="{{userPhoto}}" alt="">
                     </div>
                     <div class="user-info">
                         <p style="text-align:left;"> 
-							<span class="username">{{user.username}}</span>
-                        
-							<span style="float:right;" class="posted">{{posted}}</span>
+							<span class="username">{{user}}</span>
+							<br>
+							<span style="float:left;" class="posted">{{posted}}</span>
 						</p>
                     </div>
                 </div>
@@ -65,4 +66,4 @@
 <script src="./js/chatbox.js"></script>
 <script src="./js/search.js"></script>
 <script src="./js/likes.js"></script>
-
+<script src="./js/backtotop.js"></script>

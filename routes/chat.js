@@ -1,11 +1,18 @@
-// var models = require("../models");
-var data = require("../data.json");
-
+var models = require("../models");
 
 exports.view = function(req, res) {
-    console.log("likes clicked: " + req.body.likes);
-	data.likes = req.body.likes;
-	var like = data.likes;
-	console.log(like);
-    res.render('chat', {'likes': like});
+	models.NewsFeed
+	.find()
+	.sort('-posted')
+	.exec(displayNewsFeed);
+
+	function displayNewsFeed(err, newsfeed_posts){
+		if(err) { 
+			console.log(err);
+			res.send(500);
+		} 
+
+		var data = {newsfeed: newsfeed_posts};
+    	res.render("chat", data);	
+	}
 };

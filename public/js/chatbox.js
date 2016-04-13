@@ -19,7 +19,7 @@
 
         function messageTemplate(parsedData) {
           // generate HTML text based on some data to be prepended into the list
-            var result = '<div class="user">' +
+            var result = '<hr><br><div class="user">' +
                 '<div class="user-image">' +
                 '<img src="' + parsedData.userPhoto + '" alt="">' +
                 '</div>' +
