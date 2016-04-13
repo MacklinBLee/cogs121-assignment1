@@ -1,26 +1,26 @@
-2016-04-13T03:42:09.135+0000 [initandlisten] MongoDB starting : pid=2817 port=27017 dbpath=dbpath 32-bit host=precise32
-2016-04-13T03:42:09.141+0000 [initandlisten] 
-2016-04-13T03:42:09.142+0000 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
-2016-04-13T03:42:09.143+0000 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
-2016-04-13T03:42:09.143+0000 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
-2016-04-13T03:42:09.146+0000 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
-2016-04-13T03:42:09.146+0000 [initandlisten] 
-2016-04-13T03:42:09.146+0000 [initandlisten] db version v2.6.12
-2016-04-13T03:42:09.147+0000 [initandlisten] git version: d73c92b1c85703828b55c2916a5dd4ad46535f6a
-2016-04-13T03:42:09.148+0000 [initandlisten] build info: Linux ip-10-45-196-214 2.6.18-194.el5xen #1 SMP Tue Mar 16 22:08:06 EDT 2010 i686 BOOST_LIB_VERSION=1_49
-2016-04-13T03:42:09.148+0000 [initandlisten] allocator: system
-2016-04-13T03:42:09.149+0000 [initandlisten] options: { storage: { dbPath: "dbpath" }, systemLog: { destination: "file", path: "log/mongod.log" } }
-2016-04-13T03:42:09.167+0000 [initandlisten] 	WARNING: This file system is not supported. For further information see:
-2016-04-13T03:42:09.168+0000 [initandlisten] 			http://dochub.mongodb.org/core/unsupported-filesystems
-2016-04-13T03:42:09.169+0000 [initandlisten] 		Please notify MongoDB, Inc. if an unlisted filesystem generated this warning.
-2016-04-13T03:42:09.192+0000 [initandlisten] ERROR:   mmap() failed for dbpath/local.ns len:16777216 errno:22 Invalid argument
-2016-04-13T03:42:09.193+0000 [initandlisten] error couldn't open file dbpath/local.ns terminating
-2016-04-13T03:42:09.194+0000 [initandlisten] dbexit: 
-2016-04-13T03:42:09.194+0000 [initandlisten] shutdown: going to close listening sockets...
-2016-04-13T03:42:09.195+0000 [initandlisten] shutdown: going to flush diaglog...
-2016-04-13T03:42:09.195+0000 [initandlisten] shutdown: going to close sockets...
-2016-04-13T03:42:09.196+0000 [initandlisten] shutdown: waiting for fs preallocator...
-2016-04-13T03:42:09.196+0000 [initandlisten] shutdown: closing all files...
-2016-04-13T03:42:09.198+0000 [initandlisten] closeAllFiles() finished
-2016-04-13T03:42:09.198+0000 [initandlisten] shutdown: removing fs lock...
-2016-04-13T03:42:09.202+0000 [initandlisten] dbexit: really exiting now
+2016-04-13T06:32:11.912+0000 [initandlisten] MongoDB starting : pid=3811 port=27017 dbpath=dbpath 32-bit host=precise32
+2016-04-13T06:32:11.914+0000 [initandlisten] 
+2016-04-13T06:32:11.917+0000 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2016-04-13T06:32:11.917+0000 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2016-04-13T06:32:11.918+0000 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+2016-04-13T06:32:11.919+0000 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2016-04-13T06:32:11.920+0000 [initandlisten] 
+2016-04-13T06:32:11.920+0000 [initandlisten] db version v2.6.12
+2016-04-13T06:32:11.922+0000 [initandlisten] git version: d73c92b1c85703828b55c2916a5dd4ad46535f6a
+2016-04-13T06:32:11.924+0000 [initandlisten] build info: Linux ip-10-45-196-214 2.6.18-194.el5xen #1 SMP Tue Mar 16 22:08:06 EDT 2010 i686 BOOST_LIB_VERSION=1_49
+2016-04-13T06:32:11.925+0000 [initandlisten] allocator: system
+2016-04-13T06:32:11.925+0000 [initandlisten] options: { storage: { dbPath: "dbpath" }, systemLog: { destination: "file", path: "log/mongod.log" } }
+2016-04-13T06:32:11.940+0000 [initandlisten] 	WARNING: This file system is not supported. For further information see:
+2016-04-13T06:32:11.940+0000 [initandlisten] 			http://dochub.mongodb.org/core/unsupported-filesystems
+2016-04-13T06:32:11.941+0000 [initandlisten] 		Please notify MongoDB, Inc. if an unlisted filesystem generated this warning.
+2016-04-13T06:32:11.964+0000 [initandlisten] ERROR:   mmap() failed for dbpath/local.ns len:16777216 errno:22 Invalid argument
+2016-04-13T06:32:11.965+0000 [initandlisten] error couldn't open file dbpath/local.ns terminating
+2016-04-13T06:32:11.965+0000 [initandlisten] dbexit: 
+2016-04-13T06:32:11.966+0000 [initandlisten] shutdown: going to close listening sockets...
+2016-04-13T06:32:11.967+0000 [initandlisten] shutdown: going to flush diaglog...
+2016-04-13T06:32:11.967+0000 [initandlisten] shutdown: going to close sockets...
+2016-04-13T06:32:11.968+0000 [initandlisten] shutdown: waiting for fs preallocator...
+2016-04-13T06:32:11.970+0000 [initandlisten] shutdown: closing all files...
+2016-04-13T06:32:11.971+0000 [initandlisten] closeAllFiles() finished
+2016-04-13T06:32:11.971+0000 [initandlisten] shutdown: removing fs lock...
+2016-04-13T06:32:11.974+0000 [initandlisten] dbexit: really exiting now

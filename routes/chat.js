@@ -1,6 +1,11 @@
 // var models = require("../models");
+var data = require("../data.json");
+
 
 exports.view = function(req, res) {
-    var data = {data: []};
-    res.render("chat", data);
+    console.log("likes clicked: " + req.body.likes);
+	data.likes = req.body.likes;
+	var like = data.likes;
+	console.log(like);
+    res.render('chat', {'likes': like});
 };

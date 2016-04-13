@@ -17,14 +17,10 @@
 
 <body>
 <p style="text-align:center"> <img src="../img/mudkip.jpg" > </p>
-    <script type="text/javascript">
-    var clicks = 0;
-    function onClick() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-    </script>
-    <a id="clicks">0</a> <button type="button" onClick="onClick()">Like</button>
+    
+    <button type="button" id="likes">Like</button>
+	<p>Likes: {{likes}} </p>
+
 </body>
 
 <section>
@@ -68,3 +64,5 @@
 <script src="./js/socket.io.min.js"></script>
 <script src="./js/chatbox.js"></script>
 <script src="./js/search.js"></script>
+<script src="./js/likes.js"></script>
+

@@ -7,6 +7,8 @@ const path = require("path");
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
 
+var data = require('./routes/data');
+
 require("dotenv").load();
 var models = require("./models");
 var mongoose = require('mongoose');
@@ -122,12 +124,17 @@ passport.deserializeUser(function(user, done) {
 
 // Routes
 /* TODO: Routes for OAuth using Passport */
-app.get("/", router.index.view);
-app.get("/chat", router.chat.view);
+app.get('/', router.index.view);
+app.get('/chat', router.chat.view);
 // More routes here if needed
 app.get('/auth/twitter', router.twitter);
 app.get('/auth/twitter/callback', router.callback);
 app.get('/logout', router.logout);
+
+app.get('/data', data.data);
+
+app.post('/chat', router.chat.view);
+
 io.use(function(socket, next) {
     session_middleware(socket.request, {}, next);
 });
