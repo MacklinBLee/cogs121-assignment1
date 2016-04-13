@@ -7,6 +7,7 @@
         }
         $("li").each(function(index) {
             var username = $(this).find(".username").text().toUpperCase().trim();
+            //instead of message do picture tags...? tags too much? or just do message with pic
             var message = $(this).find(".message-content").text().toUpperCase().trim();
             if (message.contains(filter) || username.contains(filter)) {
                 $(this).show();

@@ -1,21 +1,19 @@
-var mongoose = require('mongoose');
+var Mongoose = require('mongoose');
 
-var UserSchema = new mongoose.Schema({
-    "twitterID": String,
+var UserSchema = new Mongoose.Schema({
+	"twitterID": String,
     "token": String,
     "username": String,
     "displayName": String,
-    "photo": [ {"value": String } ],
+    "photo": String
 });
 
-exports.User = mongoose.model("User", UserSchema);
-
-var MessageSchema = new mongoose.Schema({
-  "username": String,
-  "photo": [ {"value": String } ],
-  "comment": String,
-  "rating": String,
-  "posted": Date
+var NewsFeedSchema = new Mongoose.Schema({
+	"user": String,
+	"userPhoto": String,
+	"message": String,
+	"posted": Date
 });
 
-exports.Message = mongoose.model("Message", MessageSchema);
+exports.User = Mongoose.model('User', UserSchema);
+exports.NewsFeed = Mongoose.model('NewsFeed', NewsFeedSchema);

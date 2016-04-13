@@ -1,0 +1,70 @@
+<head>
+   <link rel="stylesheet" type="text/css" href="../css/style.min.css">
+</head>
+
+<header>
+    <a class="logout" href="/logout">
+        <div align=right class="logout-button">
+            Logout
+        </div>
+    </a>
+    
+</header>
+<br>
+<br>
+<br>
+<br>
+
+<body>
+<p style="text-align:center"> <img src="../img/mudkip.jpg" > </p>
+    <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <a id="clicks">0</a> <button type="button" onClick="onClick()">Like</button>
+</body>
+
+<section>
+<br>
+    <div id="inner">
+        <form id="send_message" action="">
+            <input id="user_input" placeholder="What do you think of the art?" autocomplete="off" style="width:600px; height:100px;" required />
+            <br>
+			<input type="submit" value="Post">
+
+		</form>
+		<br>
+        <ul style="list-style-type:none" id="messages">
+            {{#each newsfeed}}
+			<hr>
+			<li>
+                <div class="user">
+                    <div class="user-image">
+                        <img src="{{user.photo}}" alt="">
+                    </div>
+                    <div class="user-info">
+                        <p style="text-align:left;"> 
+							<span class="username">{{user.username}}</span>
+                        
+							<span style="float:right;" class="posted">{{posted}}</span>
+						</p>
+                    </div>
+                </div>
+                <div class="message-content">
+                    {{message}} 
+				</div>
+			</li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+<footer>
+
+</footer>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/socket.io.min.js"></script>
+<script src="./js/chatbox.js"></script>
+<script src="./js/search.js"></script>
