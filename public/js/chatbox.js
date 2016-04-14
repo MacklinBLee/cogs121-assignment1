@@ -17,17 +17,20 @@
         // grab and parse data and assign it to the parsedData variable.
         parsedData.posted = new Date(parsedData.posted);
 
-        $(document).keypress(function(e){
+       /* $(document).keypress(function(e){
             if(e.which == 13) {
                 objDiv.scrollTop = objDiv.scrollHeight;
                 //window.scrollTo(0,objDiv.scrollHeight);
                 //alert('You pressed enter!');
             }
-        });
+        });*/
 
         // other possible solution(s) here.
         $('#messages').append($('<li>').html(messageTemplate(parsedData)));
 
+		objDiv = document.getElementById("inner");
+        objDiv.scrollTop = objDiv.scrollHeight;
+		
         function messageTemplate(parsedData) {
           // generate HTML text based on some data to be prepended into the list
             var result = '<hr><br><div class="user">' +
