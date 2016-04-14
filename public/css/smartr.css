@@ -39,7 +39,7 @@ body{
 }
 
 #centerText{
-	position: relative;
+	position: center;
 	top: 50%;
 	margin: auto;
 	width: 25%;
@@ -57,6 +57,10 @@ center{
 
 .smartr{
 	height: 150px;
+	margin: auto;
+	max-width:100%;
+    max-height:100%;
+	
 }
 
 header{
