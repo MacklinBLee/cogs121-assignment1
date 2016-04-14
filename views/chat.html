@@ -20,14 +20,6 @@
     <img src="../img/mudkip.jpg" >
   </div>
 
-  <div>
-  <form class="chatbox" id="send_message" action="">
-    <input id="user_input"
-           placeholder="What do you think of the art?"
-           autocomplete="off"/>
-    <input type="submit" value="Post">
-  </form>
-  </div>
 
   <div id="inner">
     <ul style="list-style-type:none" id="messages">
@@ -55,6 +47,15 @@
       {{/each}}
     </ul>
   </div>
+  <div>
+  <form class="chatbox" id="send_message" action="">
+    <input id="user_input"
+           placeholder="What do you think of the art?"
+           autocomplete="off"/>
+    <input type="submit" value="Post">
+  </form>
+  </div>
+
 </body>
 
 <script src="./js/jquery.min.js"></script>

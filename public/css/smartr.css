@@ -221,6 +221,7 @@ footer{
 
 .fanPic{
         text-align:left;
+	float:left;
 }
 
 #logo{
@@ -233,6 +234,7 @@ footer{
 
 .chatbox{
         width:50%;
+	float:right;
 }
 
 #inner{
