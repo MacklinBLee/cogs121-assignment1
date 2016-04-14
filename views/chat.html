@@ -1,66 +1,62 @@
 <head>
-   <link rel="stylesheet" type="text/css" href="../css/smartr.css">
+  <link rel="stylesheet" type="text/css" href="../css/smartr.css">
 </head>
 
-<header>	
-	<a class="title"> smARTr </a>
-    <a class="logout" href="/logout">
-		<div  class="logout-button">
-            Logout
-        </div>
-    </a>
-    
-</header>
 <br>
 <br>
 <br>
 <br>
 
 <body>
-<p style="text-align:center"> <img src="../img/mudkip.jpg" > </p>
-    
-    <button type="button" id="likes">Like</button>
-	<p>Likes: {{likes}} </p>
+  <header class="headerbg">	
+    <img id="logo" src="../img/logo.png"i alt="">
+    <a class="logout" href="/logout">
+      <div class="logout-button">Logout</div>
+    </a>  
+  </header>
 
+
+  <div class="fanPic">
+    <img src="../img/mudkip.jpg" >
+  </div>
+
+  <div>
+  <form class="chatbox" id="send_message" action="">
+    <input id="user_input"
+           placeholder="What do you think of the art?"
+           autocomplete="off"/>
+    <input type="submit" value="Post">
+  </form>
+  </div>
+
+  <div id="inner">
+    <ul style="list-style-type:none" id="messages">
+      {{#each newsfeed}}
+        <hr>
+        <li>
+          <div class="user">
+            <div class="user-image">
+              <img src="{{userPhoto}}" alt="">
+            </div>
+
+            <div class="user-info">              
+              <p style="text-align:left;"> 
+	        <span class="username">{{user}}</span> 
+	        <br>
+                <span style="float:left;" class="posted">{{posted}}</span>
+              </p>
+            </div>
+          </div>
+                
+          <div class="message-content">
+            {{message}} 
+          </div>
+        </li>  
+      {{/each}}
+    </ul>
+  </div>
 </body>
 
-<section>
-<br>
-    <div id="inner">
-        <form id="send_message" action="">
-            <input id="user_input" placeholder="What do you think of the art?" autocomplete="off" style="width:600px; height:100px;" required />
-            <br>
-			<input type="submit" value="Post">
-
-		</form>
-		<br>
-        <ul style="list-style-type:none" id="messages">
-            {{#each newsfeed}}
-			<hr>
-			<li>
-                <div class="user">
-                    <div class="user-image">
-                        <img src="{{userPhoto}}" alt="">
-                    </div>
-                    <div class="user-info">
-                        <p style="text-align:left;"> 
-							<span class="username">{{user}}</span>
-							<br>
-							<span style="float:left;" class="posted">{{posted}}</span>
-						</p>
-                    </div>
-                </div>
-                <div class="message-content">
-                    {{message}} 
-				</div>
-			</li>
-            {{/each}}
-        </ul>
-    </div>
-</section>
-<footer>
-
-</footer>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/socket.io.min.js"></script>
 <script src="./js/chatbox.js"></script>
