@@ -8,11 +8,22 @@
         $('#user_input').val('');
     });
 
+    var objDiv = document.getElementById("inner");
+    objDiv.scrollTop = objDiv.scrollHeight;
+
     socket.on("newsfeed", function(data) {
         var parsedData;
         parsedData = JSON.parse(data);
         // grab and parse data and assign it to the parsedData variable.
         parsedData.posted = new Date(parsedData.posted);
+
+        $(document).keypress(function(e){
+            if(e.which == 13) {
+                objDiv.scrollTop = objDiv.scrollHeight;
+                //window.scrollTo(0,objDiv.scrollHeight);
+                //alert('You pressed enter!');
+            }
+        });
 
         // other possible solution(s) here.
         $('#messages').append($('<li>').html(messageTemplate(parsedData)));
@@ -33,6 +44,7 @@
                 '</div>';
             return result;
         }
+
     });
 
         
