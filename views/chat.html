@@ -14,9 +14,8 @@
 
 
   <div class="fanArt">
-    <iframe id="videoPosition"
-     src="https://www.youtube.com/embed/LHI8U4qR5W4?autoplay=1"
-     frameborder="0" allowfullscreen></iframe>
+    <iframe id="videoPosition" src="http://www.youtube.com/embed/videoseries?list=PLktSUNu3rLlqGMo4SqANFuJn2o-H5A0-B" 
+            frameborder="0"></iframe>
   </div>
 
 
@@ -46,7 +45,7 @@
     </ul>
   </div>
   <div class="chatbox">
-    <form id="send_message" action="">
+    <form id="send_message" action="" onkeypress="scrollDown(event)">
     <input id="user_input"
            placeholder="What do you think of the art?"
            autocomplete="off"/>
@@ -58,4 +57,3 @@
 <script src="./js/chatbox.js"></script>
 <script src="./js/search.js"></script>
 <script src="./js/likes.js"></script>
-<script src="./js/backtotop.js"></script>

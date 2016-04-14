@@ -50,6 +50,10 @@ body{
 	line-height: 75px;
 }
 
+center{
+        padding-top:40px;
+}
+
 .smartr{
 	height: 150px;
 }
@@ -229,23 +233,22 @@ bottom:20px;
 	right:2%;
         width:50%;
 	bottom:20px;
+	padding-top:4px;
 }
 
 #inner{
-        position:relative;
+        position:fixed;
 	padding:0px;
-	top: 30px;
+	top: 85px;
 	right:2%;
-	bottom:50px;
-	height:75%;
+	bottom:90px;
 	overflow:auto;
-        float:right;
 	width:50%;
 }
 
 #videoPosition{
         height:100%;
-        width:50%;
+        width:49%;
 }
 
 #postBtn{
