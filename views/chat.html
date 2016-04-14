@@ -16,15 +16,16 @@
   </header>
 
 
-  <div class="fanPic">
-    <img src="../img/mudkip.jpg" >
+  <div class="fanArt">
+    <iframe id="videoPosition"
+     src="https://www.youtube.com/embed/LHI8U4qR5W4?autoplay=1"
+     frameborder="0" allowfullscreen></iframe>
   </div>
 
 
   <div id="inner">
     <ul style="list-style-type:none" id="messages">
       {{#each newsfeed}}
-        <hr>
         <li>
           <div class="user">
             <div class="user-image">
@@ -47,13 +48,12 @@
       {{/each}}
     </ul>
   </div>
-  <div>
-  <form class="chatbox" id="send_message" action="">
+  <div class="chatbox">
+    <form id="send_message" action="">
     <input id="user_input"
            placeholder="What do you think of the art?"
            autocomplete="off"/>
-    <input type="submit" value="Post">
-  </form>
+    </form>
   </div>
 
 </body>

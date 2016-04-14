@@ -24,7 +24,7 @@ html{
 
 body{
         height:100%;
-	background: -webkit-linear-gradient(left top, black, #333746); /* Standard syntax */
+        background-color:lavender;
 	background-size: fill;
 	margin: 0;
 	padding: 0;
@@ -63,8 +63,6 @@ body{
 }
 
 header{
-
-
 	position:fixed;	
 	top:0;
 	left:0;
@@ -148,13 +146,14 @@ input:focus{
 }
 
 #messages{
-	margin-top:30px;
 	background-color:#fafafa;
 	border:1px #a4ccd5 solid;
 	border-radius:3px;
 	list-style-type:none;
 	padding:0;
 	font-size:16px;
+	margin-bottom:0px;
+	padding-bottom:0px;
 }
 	
 #messages>hr:first-child{
@@ -172,7 +171,6 @@ input:focus{
 
 #messages>li{
 	padding:20px;
-	padding-bottom:10px
 }
 
 .user{
@@ -219,11 +217,14 @@ footer{
 	margin-bottom:20px
 }
 
-@media only screen and (max-width:825px){#inner{width:95%}#messages{margin-top:20px}}
+@media only screen and (max-width:825px){#inner{width:95%}#messages}
 
-.fanPic{
-        text-align:left;
-	float:left;
+.fanArt{
+position:fixed;
+top:180px;
+width:90%;
+left:2%;
+bottom:20px;
 }
 
 #logo{
@@ -235,12 +236,33 @@ footer{
 }
 
 .chatbox{
+        position:fixed;
+	right:2%;
         width:50%;
-	float:right;
+	bottom:20px;
 }
 
 #inner{
+        position:relative;
+	padding:0px;
+	top: 30px;
+	right:2%;
+	bottom:50px;
+	height:75%;
+	overflow:auto;
         float:right;
-        display:table;
 	width:50%;
+}
+
+#videoPosition{
+        height:100%;
+        width:50%;
+}
+
+#postBtn{
+        position:fixed;
+        width: 50px;
+        height:50px;
+        bottom:20px;
+        right:2%;
 }
