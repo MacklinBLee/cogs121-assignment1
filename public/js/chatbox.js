@@ -15,7 +15,7 @@
         parsedData.posted = new Date(parsedData.posted);
 
         // other possible solution(s) here.
-        $('#messages').prepend($('<li>').html(messageTemplate(parsedData)));
+        $('#messages').append($('<li>').html(messageTemplate(parsedData)));
 
         function messageTemplate(parsedData) {
           // generate HTML text based on some data to be prepended into the list

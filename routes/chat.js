@@ -3,7 +3,7 @@ var models = require("../models");
 exports.view = function(req, res) {
 	models.NewsFeed
 	.find()
-	.sort('-posted')
+	.sort({'-posted': 'descending'})
 	.exec(displayNewsFeed);
 
 	function displayNewsFeed(err, newsfeed_posts){

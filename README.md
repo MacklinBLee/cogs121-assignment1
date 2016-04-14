@@ -34,11 +34,26 @@ We designed our application to be simple and straightforward so that documentati
 
 Group Member Contribution
 
-Macklin - 
+Donna
+	Worked through 1.1-1.2 to understand passports.
+	Worked through 1.3 to understand sockets
+	Created an icon for our application “smARTr”
+	Basic mockup/wireframe for the application
 
-Donna - 
+Macklin
+	Worked through 1.1-1.2 to understand passports.
+	Used Donna’s part 1 of the assignment to create a skeleton for our project
+	Created a new css style page and started basic styling
+	Added an auto scroll that goes back to the top of the screen. The icon appears if you scroll below the fold
+	Redesign the comment section
 
-Edward - 
+Edward
+	Came up with the art idea for the application
+	CSS for login and home screens
 
-Chris - 
+Chris
+	CSS for login and home screens
+	Chose the color scheme for the application and overall design decisions
+	Redesigned the login screen 
+
 
