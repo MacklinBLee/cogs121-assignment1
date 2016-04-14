@@ -15,11 +15,23 @@ a.back-to-top {
 
 
 
-body{background-image:url("../img/bg.png");
+body{
+
 background-repeat:repeat;
+background-color: #333746;
 font-family:'Lato',sans-serif}
 
+#background{
+	position:fixed;
+	top:100px;
+	width:100%;
+	height:100%;
+	background-color: green;
+}
+
 header{
+
+
 	position:fixed;	
 	top:0;
 	left:0;
@@ -72,12 +84,6 @@ section{
 	margin-top:65px;
 	padding-top:25px;
 	width:100%
-}
-
-#inner{
-	display:table;
-	margin:0 auto;
-	width:800px
 }
 
 form{
@@ -178,3 +184,25 @@ footer{
 }
 
 @media only screen and (max-width:825px){#inner{width:95%}#messages{margin-top:20px}}
+
+.fanPic{
+        text-align:left;
+}
+
+#logo{
+        height:100%;
+}
+
+.headerbg{
+        background-color:black;
+}
+
+.chatbox{
+        width:50%;
+}
+
+#inner{
+        float:right;
+        display:table;
+	width:50%;
+}
