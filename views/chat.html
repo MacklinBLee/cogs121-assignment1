@@ -18,8 +18,8 @@
 	<ul class="nav nav-tabs">
 		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
 		<li><a data-toggle="tab" href="#menu1"> Agar.io </a></li>
-		<li><a data-toggle="tab" href="#menu2"> Menu 2 </a></li>
-		<li><a data-toggle="tab" href="#menu3"> Menu 3 </a></li>
+		<li><a data-toggle="tab" href="#menu2"> Slither.io </a></li>
+		<li><a data-toggle="tab" href="#menu3"> Diep.io </a></li>
 	</ul>
 
 	<div class="tab-content">
@@ -29,8 +29,6 @@
 		
 		<div id="menu1" class="tab-pane fade">
 						<div class="fanArt">
-				<!--<iframe id="videoPosition" src="http://www.youtube.com/embed/videoseries?list=PLktSUNu3rLlqGMo4SqANFuJn2o-H5A0-B" 
-				frameborder="0"></iframe>-->
 				<iframe id="videoPosition" src="https://www.agar.io" frameborder="0"></iframe>
 
 			</div>
@@ -70,13 +68,83 @@
 		</div>
 		
 		<div id="menu2" class="tab-pane fade">
-			<h3>Menu 2</h3>
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<div class="fanArt">
+				<iframe id="videoPosition" src="https://www.slither.io" frameborder="0"></iframe>
+
+			</div>
+			
+			<div id="inner">
+				<ul style="list-style-type:none" id="messages">
+				{{#each newsfeed}}
+					<hr>
+					<li>
+						<div class="user">
+							<div class="user-image">
+								<img src="{{userPhoto}}" alt="">
+							</div>
+
+							<div class="user-info">              
+								<p style="text-align:left;"> 
+									<span class="username">{{user}}</span> 
+									<br>
+									<span style="float:left;" class="posted">{{posted}}</span>
+								 </p>
+							</div>
+						</div>
+									
+						<div class="message-content">
+							{{message}} 
+						</div>
+					</li>  
+				{{/each}}
+				</ul>
+			</div>
+			
+			<div class="chatbox">
+				<form id="send_message" action="">
+					<input id="user_input" placeholder="Comment!" autocomplete="off"/>
+				</form>
+			</div>
 		</div>
 		
 		<div id="menu3" class="tab-pane fade">
-			<h3>Menu 3</h3>
-			<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<div class="fanArt">
+				<iframe id="videoPosition" src="https://www.diep.io" frameborder="0"></iframe>
+
+			</div>
+			
+			<div id="inner">
+				<ul style="list-style-type:none" id="messages">
+				{{#each newsfeed}}
+					<hr>
+					<li>
+						<div class="user">
+							<div class="user-image">
+								<img src="{{userPhoto}}" alt="">
+							</div>
+
+							<div class="user-info">              
+								<p style="text-align:left;"> 
+									<span class="username">{{user}}</span> 
+									<br>
+									<span style="float:left;" class="posted">{{posted}}</span>
+								 </p>
+							</div>
+						</div>
+									
+						<div class="message-content">
+							{{message}} 
+						</div>
+					</li>  
+				{{/each}}
+				</ul>
+			</div>
+			
+			<div class="chatbox">
+				<form id="send_message" action="">
+					<input id="user_input" placeholder="Comment!" autocomplete="off"/>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
