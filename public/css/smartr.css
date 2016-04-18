@@ -37,25 +37,13 @@ body{
 	padding-bottom: 15%;
 }
 
-#centerText{
-	position: center;
-	top: 50%;
-	margin: auto;
-	width: 25%;
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial. sans-serif;
-	color: white;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 25px;
-	line-height: 75px;
-}
-
 center{
-        padding-top:40px;
+	position: relative;
+    top:300px;
 }
 
 .smartr{
-	height: 150px;
+	height: 90px;
 	margin: auto;
 	max-width:100%;
     max-height:100%;
@@ -276,7 +264,9 @@ footer{
     background-image: url("../img/twitterBtn.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 50px;
-    width: 250px;
+    background-size:200px 50px;
+    height: 45px;
+    width: 200px;
     border: none;
+    margin-top:10px;
 }
