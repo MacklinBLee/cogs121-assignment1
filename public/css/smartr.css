@@ -35,7 +35,6 @@ body{
 	height: 100%;
 	width: 100%;
 	padding-bottom: 15%;
-	background: -webkit-linear-gradient(left top, #222, #333746);
 }
 
 #centerText{
@@ -69,7 +68,7 @@ header{
 	left:0;
 	height:65px;
 	width:100%;
-	background: -webkit-linear-gradient(left top, #222, #333746);
+	background-image: url("../img/titleBg.png");
 	box-shadow:0 1px 10px #333;
 	-webkit-overflow-scrolling:touch}
 	
@@ -233,6 +232,8 @@ footer{
 
 #logo{
 	height:100%;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 
@@ -265,4 +266,17 @@ footer{
 	height:50px;
 	bottom:20px;
 	right:2%;
+}
+
+#title{
+	background-image: url("../img/titleBg.png");
+}
+
+#twitterBtn{
+    background-image: url("../img/twitterBtn.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 50px;
+    width: 250px;
+    border: none;
 }
