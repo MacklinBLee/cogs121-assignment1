@@ -212,10 +212,10 @@ footer{
 
 @media only screen and (max-width:825px){#inner{width:95%}#messages}
 
-.fanArt{
+.game{
 	position:fixed;
 	top:150px;
-	width:90%;
+	width:125%;
 	left:2%;
 	bottom:20px;
 }
@@ -230,9 +230,10 @@ footer{
 .chatbox{
 	position:fixed;
 	right:2%;
-	width:50%;
+	width:33%;
 	bottom:20px;
 	padding-top:4px;
+	padding-right: 100px;
 }
 
 #inner{
@@ -242,12 +243,7 @@ footer{
 	right:2%;
 	bottom:90px;
 	overflow:auto;
-	width:50%;
-}
-
-#videoPosition{
-	height:100%;
-	width:49%;
+	width:33%;
 }
 
 #postBtn{
