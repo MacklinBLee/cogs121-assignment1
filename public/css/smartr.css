@@ -314,9 +314,7 @@ form{
 #minBtn{
         color:white;
         position:fixed;
-        top: 8    document.getElementById("submitBtn").style.height = "50px";
-    document.getElementById("submitBtn").style.border = "none";
-5px;
+        top: 85px;
 	right:2%;
 	height:30px;
 	border:1px #a4ccd5 solid;

@@ -57,7 +57,7 @@ function minChat(){
     document.getElementById("submitBtn").style.visibility = "hidden";
     document.getElementById("send_message").style.height = "0px";
     document.getElementById("send_message").style.border = "none";
-    document.getElementById("gamePosition").style.width = "70%";
+    document.getElementById("gamePosition").style.width = "71%";
     document.getElementById("minBtn").innerHTML="Show Chat Box";
     document.getElementById("minBtn").value = "0";
   }
