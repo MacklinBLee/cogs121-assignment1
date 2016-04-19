@@ -17,7 +17,7 @@ a.back-to-top {
 
 a{
 	text-decoration: none;
-	color: white;
+	color: #555;
 }
 
 html{
@@ -314,7 +314,9 @@ form{
 #minBtn{
         color:white;
         position:fixed;
-        top: 85px;
+        top: 8    document.getElementById("submitBtn").style.height = "50px";
+    document.getElementById("submitBtn").style.border = "none";
+5px;
 	right:2%;
 	height:30px;
 	border:1px #a4ccd5 solid;
