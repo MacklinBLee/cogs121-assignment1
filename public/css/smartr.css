@@ -58,6 +58,7 @@ header{
 	height:65px;
 	width:100%;
 	background-image: url("../img/titleBg.png");
+	background-size: cover;
 	box-shadow:0 1px 10px #333;
 	-webkit-overflow-scrolling:touch}
 	
@@ -298,6 +299,7 @@ form{
 
 #title{
 	background-image: url("../img/titleBg.png");
+	background-size: cover;
 }
 
 #twitterBtn{
@@ -321,4 +323,21 @@ form{
 	border-top-right-radius:3px;
 	border-bottom-right-radius:3px;
 	background-color:#7292a5;
+}
+
+#home{
+	background-color: white;
+}
+
+#home > center {
+	padding-bottom: 180px;
+	top: 15px;
+}
+
+.help{
+	height: 500px;
+}
+
+h1{
+	margin-top: 0px;
 }
