@@ -49,6 +49,25 @@
         }
 
     });
-
-        
 })($);
+
+function minChat(){
+  if(document.getElementById("minBtn").value == "1") {  
+    document.getElementById("inner").style.width = "0px";
+    document.getElementById("submitBtn").style.visibility = "hidden";
+    document.getElementById("send_message").style.height = "0px";
+    document.getElementById("send_message").style.border = "none";
+    document.getElementById("gamePosition").style.width = "70%";
+    document.getElementById("minBtn").innerHTML="Show Chat Box";
+    document.getElementById("minBtn").value = "0";
+  }
+  else{
+    document.getElementById("inner").style.width = "33%";
+    document.getElementById("submitBtn").style.visibility = "visible";
+    document.getElementById("send_message").style.height = "50px";
+    document.getElementById("send_message").style.border = "none";
+    document.getElementById("gamePosition").style.width = "45%";
+    document.getElementById("minBtn").innerHTML="Hide Chat Box";
+    document.getElementById("minBtn").value = "1";
+  }
+}

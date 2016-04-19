@@ -5,7 +5,6 @@
 <br>
 <br>
 
-
 <header class="headerbg">	
   <a href="/chat"><img id="logo" src="../img/logo.png"i alt=""></a>
   <a class="logout" href="/logout">
@@ -17,94 +16,21 @@
   <div class="container">
     <ul class="nav nav-tabs">
       <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-      <li><a data-toggle="tab" href="#menu1"> Agar </a></li>
-      <li><a data-toggle="tab" href="#menu2"> Slither </a></li>
-      <li><a data-toggle="tab" href="#menu3"> Chess </a></li>
+      <li><a data-toggle="tab" href="#menu1"> Slither </a></li>
     </ul>
 
     <div class="tab-content">
-      <div id="home" class="tab-pane fade in active">Help Screen?
-	     <div id="inner">
-          <ul style="list-style-type:none" id="messages">
-            {{#each newsfeed}}
-            <hr>
-            <li>
-              <div class="user">
-                <div class="user-image">
-                  <img src="{{userPhoto}}" alt="">
-                </div>
+      <div id="home" class="tab-pane fade in active">
 
-                <div class="user-info">              
-                  <p style="text-align:left;"> 
-                    <span class="username">{{user}}</span> 
-                    <br>
-                    <span style="float:left;" class="posted">{{posted}}</span>
-                  </p>
-                </div>
-              </div>
-
-              <div class="message-content">
-                {{message}} 
-              </div>
-            </li>  
-            {{/each}}
-          </ul>
-        </div>
-
-        <div class="chatbox">
-          <form id="send_message" action="">
-            <input type="text" id="user_input" placeholder="Comment!" autocomplete="off"/>
-            <button type="submit" class="submitBtn">Submit</button>
-          </form>
-        </div>
-      </div>
-
+    
       <!-- Start menu1 -->
       <div id="menu1" class="tab-pane fade">
         <div class="game">
-          <iframe id="gamePosition" src="https://www.agar.io" frameborder="0"></iframe>
-        </div>
-
-        <div id="inner">
-          <ul style="list-style-type:none" id="messages">
-            {{#each newsfeed}}
-            <hr>
-            <li>
-              <div class="user">
-                <div class="user-image">
-                  <img src="{{userPhoto}}" alt="">
-                </div>
-
-                <div class="user-info">              
-                  <p style="text-align:left;"> 
-                    <span class="username">{{user}}</span> 
-                    <br>
-                    <span style="float:left;" class="posted">{{posted}}</span>
-                  </p>
-                </div>
-              </div>
-
-              <div class="message-content">
-                {{message}} 
-              </div>
-            </li>  
-            {{/each}}
-          </ul>
-        </div>
-
-        <div class="chatbox">
-          <form id="send_message" action="">
-            <input type="text" id="user_input" placeholder="Comment!" autocomplete="off"/>
-            <button type="submit" class="submitBtn">Submit</button>
-          </form>
-        </div>
-     </div>
-
-      <!-- Start menu2 -->
-      <div id="menu2" class="tab-pane fade">
-        <div class="game">
           <iframe id="gamePosition" src="https://www.slither.io" frameborder="0"></iframe>
         </div>
+      
+        <!-- Min Btn -->
+        <button id="minBtn" onclick="minChat()" value="1">Hide Chat Box</button>
 
         <div id="inner">
           <ul style="list-style-type:none" id="messages">
@@ -133,55 +59,15 @@
           </ul>
         </div>
 
-        <div class="chatbox">
+        
+	<div id="chatbox">
           <form id="send_message" action="">
             <input type="text" id="user_input" placeholder="Comment!" autocomplete="off"/>
-            <button type="submit" class="submitBtn">Submit</button>
+            <button type="submit" id="submitBtn">Submit</button>
           </form>
         </div>
       </div>
 
-
-      <!-- Start menu3 -->
-      <div id="menu3" class="tab-pane fade">
-        <div class="game">
-          <iframe id="gamePosition" src="http://chessapp.com/" frameborder="0"></iframe>
-        </div>
-
-        <div id="inner">
-          <ul style="list-style-type:none" id="messages">
-            {{#each newsfeed}}
-            <hr>
-            <li>
-              <div class="user">
-                <div class="user-image">
-                  <img src="{{userPhoto}}" alt="">
-                </div>
-
-                <div class="user-info">              
-                  <p style="text-align:left;"> 
-                    <span class="username">{{user}}</span> 
-                    <br>
-                    <span style="float:left;" class="posted">{{posted}}</span>
-                  </p>
-                </div>
-              </div>
-
-              <div class="message-content">
-                {{message}} 
-              </div>
-            </li>  
-            {{/each}}
-          </ul>
-        </div>
-
-        <div class="chatbox">
-          <form id="send_message" action="">
-            <input type="text" id="user_input" placeholder="Comment!" autocomplete="off"/>
-            <button type="submit" class="submitBtn">Submit</button>
-          </form>
-        </div>
-      </div>
     </div>
   </div>
 </body>
