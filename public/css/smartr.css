@@ -220,10 +220,10 @@ footer{
 	bottom:20px;
 }
 
--#gamePosition{
- -	height:100%;
- -	width:49%;
- +	width:33%;
+#gamePosition{
+ 	height:100%;
+ 	width:49%;
+ 	width:33%;
   }
   
   
