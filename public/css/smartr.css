@@ -1,20 +1,5 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-a.back-to-top {
-	display: none;
-	width: 60px;
-	height: 60px;
-	text-indent: -9999px;
-	position: fixed;
-	z-index: 999;
-	right: 20px;
-	bottom: 20px;
-	background: #27AE61 url("../img/up-arrow.png") no-repeat center 43%;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
-
 a{
 	text-decoration: none;
 	color: #555;
@@ -337,7 +322,7 @@ form{
 }
 
 .help{
-	height: 350px;
+	width: 100%;
 }
 
 h1{
@@ -347,7 +332,7 @@ h1{
 }
 
 .para{
-	width: 800px;
+	
 	padding-bottom: 20px;
 }
 
