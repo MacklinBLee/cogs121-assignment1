@@ -1,4 +1,4 @@
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {margin: 0; height: 100%;}
 
 a.back-to-top {
 	display: none;
@@ -52,7 +52,7 @@ center{
 }
 
 header{
-	position:fixed;	
+	position:absolute;	
 	top:0;
 	left:0;
 	height:65px;
