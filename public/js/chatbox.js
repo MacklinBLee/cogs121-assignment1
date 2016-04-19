@@ -28,7 +28,7 @@
         // other possible solution(s) here.
         $('#messages').append($('<li>').html(messageTemplate(parsedData)));
 
-		objDiv = document.getElementById("inner");
+	objDiv = document.getElementById("inner");
         objDiv.scrollTop = objDiv.scrollHeight;
 		
         function messageTemplate(parsedData) {
@@ -50,6 +50,15 @@
 
     });
 })($);
+
+
+function scrollBot(){
+        objDiv = document.getElementById("inner");
+        objDiv.scrollTop = objDiv.scrollHeight;
+		
+}
+
+
 
 function minChat(){
   if(document.getElementById("minBtn").value == "1") {  
